@@ -1,0 +1,152 @@
+/* reset*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    margin :0;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+    font-family: var(--typo);
+    color: white;
+}
+
+
+/* nav */
+#main-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.5rem 1.5rem;
+    justify-content: space-between;
+}
+
+.btn-underline {
+    display: none;
+}
+
+#left-nav img {
+    width: 100px;
+}
+
+
+/* bouton "order now */
+#order-now {
+    padding: 0.5rem 1.5rem;
+    background-color: var(--primary);
+    color: black;
+    font-weight: 900;
+    transition: 0.2s;
+    display: block;
+}
+#order-now:hover {
+    opacity: 60%;
+}
+
+/* container */
+.container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+}
+
+/* boite flex */
+#flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* text page hero */
+
+#page-hero {
+    background-attachment: fixed;
+    background-image: url("../image/Banner-1-new1-1366x800-1-com.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+#hero-page {
+    width: 400px;
+    margin-top: 3rem ;
+    margin-right: 1rem;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+#hero-page h1 {
+    font-style: 900;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+#hero-page h2 {
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+#hero-page p {
+    color: white;
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+/* section 2*/
+#section-2 {
+    background-color: white;
+}
+/* media queries */
+@media screen and (min-width: 1024px) {
+    #main-nav {
+        flex-direction: row;
+        align-items: center;
+        padding: 1.5rem 1.5rem;
+        justify-content: space-between;
+    }
+    #nav-right {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        align-items: center;
+    }
+    #left-nav img {
+        width: 140px;
+    }
+    
+    #page-hero {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;   
+        background-attachment: local;
+    }
+    .btn-underline {
+        font-size: 1rem;
+        font-weight: 700;
+        transition: 0.3s;
+        display: inline;
+    }
+    
+    .btn-underline:hover {
+        border-bottom: solid 4px var(--primary);
+        padding-bottom: 0.5rem;
+    }
+    #flex {
+        display: flex;
+        justify-content: end;
+        flex-direction: row;
+    }
+    #hero-page {
+        text-align: left;
+    }
+    
+    
+}
+::selection{
+    background-color: var(--primary);
+    color: var(--white);
+}
